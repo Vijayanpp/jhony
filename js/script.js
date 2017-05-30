@@ -1,12 +1,15 @@
 /** Document Ready **/
+$(window).load(function(){
+    $(".preloaders").fadeOut("slow");
+})
 $(document).ready(function() {
     /* Page Loader */
-    var pageloader = $("#pageloader");
-    pageloader.liveloader({
-        bgcolor: '#ED2437',
-        bordercolor: '#222222',
-        imgurl: 'images/retina/general/bride-icon.png'
-    });
+    // var pageloader = $("#pageloader");
+    // pageloader.liveloader({
+    //     bgcolor: '#ED2437',
+    //     bordercolor: '#222222',
+    //     imgurl: 'images/retina/general/bride-icon.png'
+    // });
 
     /* Slider */
     var pageloader = $("#fade-slider");

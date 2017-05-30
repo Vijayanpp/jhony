@@ -1,14 +1,15 @@
 $(document).ready(function() {
     /** Google Map **/
+
     function init_map() {
         var locations = [
-            ['<div class="scrollFix"><div class="col-md-12"><h4 class="title">Kesar Party Plot</h4></div><div class="col-md-12">  <p>Besides Sharnam-IV, </p><p>Jodhpur Tekra, Ahmedabad</p><p>Gujarat 380015</p>  </div>  </div>', 41.889448, 12.472484, 4],
-            ['<div class="scrollFix"><div class="col-md-12"><h4 class="title">Party Plot</h4></div><div class="col-md-12">  <p>Besides Sharnam-IV, </p><p>Jodhpur Tekra, Ahmedabad</p><p>Gujarat 380015</p>  </div>  </div>', 41.909448, 12.582484, 3]
+            ['<div class="scrollFix"><div class="col-md-12"><h4 class="title">Kesar Party Plot</h4></div><div class="col-md-12">  <p>Edappally Road, Edappally, Ponekkara, Edappally, Ernakulam, Kerala 682024</p>  </div>  </div>', 10.021847, 76.304976, 4],
+            ['<div class="scrollFix"><div class="col-md-12"><h4 class="title">Party Plot</h4></div><div class="col-md-12">  <p>Edappally Road, Edappally, Ponekkara, Edappally, Ernakulam, Kerala 682024</p>  </div>  </div>', 10.021847, 76.304976, 3]
         ];
         var myOptions = {
             scrollwheel: false,
-            zoom: 10,
-            center: new google.maps.LatLng(41.889448, 12.472484),
+            zoom: 17,
+            center: new google.maps.LatLng(10.021847, 76.304976),
             mapTypeId: google.maps.MapTypeId.TERRAIN
         };
         map = new google.maps.Map(document.getElementById('gmap_canvas'), myOptions);
