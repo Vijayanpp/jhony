@@ -185,13 +185,20 @@ $(document).ready(function() {
     $(document).snowfall({deviceorientation: true, round: true, minSize: 1, maxSize: 8, flakeCount: 500});
     $("#snow").click(function() {
         $( this ).toggleClass( "active" );
+
         if($(this).hasClass("active")){
-            $('.snowfall-flakes').removeClass('disp-none').addClass('disp-block');
+              
+               $('.snowfall-flakes').removeClass('disp-none').addClass('disp-block');
         }
         else{
             $('.snowfall-flakes').removeClass('disp-block').addClass('disp-none');
         }
     });
+    $("ul.filter li").click(function(){
+        
+       	$(document).snowfall('clear');
+           setTimeout(function(){$(document).snowfall({deviceorientation: true, round: true, minSize: 1, maxSize: 8, flakeCount: 500});},2000)
+    })
     
 });
 
